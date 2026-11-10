@@ -5,28 +5,40 @@
 window.PORTFOLIO = {
   journey: [
     {
+      years: "2015 – 2017",
+      title: "School: Greenpower and CREST Gold",
+      place: "Secondary school",
+      text: "Raced an electric car with the F24 Greenpower team (Best Newcomer at Alford, invited to Rockingham Speedway) and completed a CREST Gold Award researching rescue drones.",
+    },
+    {
       years: "2022 – 2023",
-      title: "Intermediate Computing: Software Development (SCQF 5/6)",
+      title: "Software Development (SCQF 6) with Higher Computing Science",
       place: "North East Scotland College",
-      text: "First formal programming course. Built my first website to a web-design specification and started using Git and GitHub.",
+      text: "Python programming, web authoring, app development in Thunkable, computer hardware and an NPA in Cyber Security covering data security, ethical hacking and digital forensics.",
     },
     {
       years: "2023 – 2024",
-      title: "HNC Computing (Next Gen): Software Development and Networking & Infrastructure",
+      title: "HNC Computing (Next Gen)",
       place: "North East Scotland College",
-      text: "Java and object-oriented programming, Cisco networking and cyber security. Took part in RGUHack 2023 and the F24 Greenpower electric car team. Worked as Student IT HelpZone shift leader and did a summer internship with the college IT team.",
+      text: "Java and OOP (the VStoq inventory system), Cisco networking, AI, and a Raspberry Pi team product called OCULai. Built an IoT door alarm with Node-RED and an ESP32 camera. Competed at RGUHack 2023.",
     },
     {
       years: "2024 – 2025",
       title: "HND Computing: Software Development",
       place: "North East Scotland College",
-      text: "Databases, HCI, professional practice and a team-built charity auction platform in React, Flask and MongoDB. My team won at RGU Hack 2025.",
+      text: "Object-oriented design, relational and NoSQL databases, HCI and software engineering methods. Led front-end work on Cache-Me-If-You-Can, a charity auction platform. Work placement with LapSafe. My team won at RGU Hack 2025.",
     },
     {
-      years: "2025 – present",
-      title: "BSc Computer Science",
+      years: "2025 – 2026",
+      title: "BSc (Hons) Computer Science, third year (direct entry)",
       place: "Robert Gordon University",
-      text: "AI for problem solving, concurrent programming, computer vision, data visualisation and languages & compilers. Also competed at RGUHack 26.",
+      text: "Concurrent programming, machine learning, AI for problem solving, Internet of Things, information security and an Agile interdisciplinary client project. Competed at RGUHack 26.",
+    },
+    {
+      years: "2026 – 2027",
+      title: "BSc (Hons) Computer Science, final year",
+      place: "Robert Gordon University",
+      text: "Natural language processing, computer vision, data visualisation, languages & compilers (a MiniTriangle compiler in C#) and my honours capstone project.",
     },
   ],
 
@@ -46,7 +58,6 @@ window.PORTFOLIO = {
         { label: "Write-up", url: "https://dominiccameronhnd.wordpress.com/2025/02/24/rgu-hack-2025/" },
       ],
       repo: "AlienDetector",
-      private: true,
     },
     {
       title: "Escape Fae Deen",
@@ -97,24 +108,13 @@ window.PORTFOLIO = {
       repo: "clipper-lte-ppp-setup",
       extraRepos: [{ repo: "wifi-locator", label: "Wi-Fi locator", private: true }],
     },
-    {
-      title: "Exotic Fish Aquarium Manager",
-      category: "personal",
-      year: 2025,
-      context: "Full-stack web app",
-      summary:
-        "Helps fish keepers plan a tank: browse a species database, build a virtual aquarium, check species compatibility and tank sizing, and get recommendations for fish that would suit the setup.",
-      stack: ["JavaScript", "Node.js", "Express", "MongoDB"],
-      repo: "aquarium-species-compatibility",
-      private: true,
-    },
 
     // ---------- School / university ----------
     {
       title: "Dog Walking Puzzle Solver",
       category: "school",
       year: 2026,
-      context: "BSc · AI for Problem Solving",
+      context: "BSc Year 3 · CM3152 AI for Problem Solving",
       summary:
         "Coursework that models a dog-walking puzzle as a state-space search problem and uses A* to find the optimal path from start to goal, with its own state, action and successor classes and tests.",
       stack: ["Java", "A* search", "State-space modelling"],
@@ -126,20 +126,20 @@ window.PORTFOLIO = {
       title: "Chart Colour Survey",
       category: "school",
       year: 2026,
-      context: "BSc · CM4125 Data Visualisation",
+      context: "BSc Final year · CM4125 Data Visualisation",
       summary:
         "An accessible survey that asks people, especially colour-blind people, how readable four chart palettes are. A static page on GitHub Pages posts answers to a Google Apps Script that writes them into a Google Sheet, with no server or API keys.",
       stack: ["HTML", "CSS", "JavaScript", "Google Apps Script", "GitHub Pages"],
       repo: "palette-survey",
     },
     {
-      title: "Charity Auction Platform",
+      title: "Cache-Me-If-You-Can",
       category: "school",
       year: 2025,
       featured: true,
-      context: "HND · Professional Practice team project",
+      context: "HND · Professional Practice in Software Development (team)",
       summary:
-        "A team-built auction site for a charity with login and registration, access levels, listing management, bidding, category filters and a responsive admin interface. I built React components such as the manageable listings and category filters, wired them to the Flask API and reviewed teammates' pull requests. We ran the project with GitHub Projects sprints.",
+        "An online auction and quiz platform built as a team for Mental Health Aberdeen's fundraising ball, with login and registration, access levels, listing management, bidding, category filters and a responsive admin interface. I built React components such as the manageable listings and category filters, wired them to the Flask API and reviewed teammates' pull requests. We ran the project with GitHub Projects sprints.",
       stack: ["React", "TypeScript", "Python Flask", "MongoDB", "GitHub Projects"],
       links: [
         { label: "Progress log", url: "https://dominiccameronhnd.wordpress.com/2025/03/07/progress-update-2/" },
@@ -153,7 +153,7 @@ window.PORTFOLIO = {
       title: "Car Service Manager",
       category: "school",
       year: 2025,
-      context: "HND · Software Development",
+      context: "HND · Databases distinction project",
       summary:
         "A Java desktop app for a garage to manage customers, cars, garages and service jobs. Built with Maven, a DAO layer over a relational database and Swing dialogs, with a developer guide, user guide and test log.",
       stack: ["Java", "Maven", "Swing", "MySQL", "DAO pattern"],
@@ -164,7 +164,7 @@ window.PORTFOLIO = {
       title: "Hospital Database System",
       category: "school",
       year: 2025,
-      context: "HND · Software Development assessment",
+      context: "HND · Software Development & Databases",
       summary:
         "A Java application connected to a MySQL hospital database for tracking patients, doctors, visits, prescriptions, drugs and insurance claims, using a DAO factory to keep data access separate from the UI.",
       stack: ["Java 17", "MySQL", "Maven", "DAO factory"],
@@ -174,37 +174,37 @@ window.PORTFOLIO = {
       title: "Healthcare Portal Prototype",
       category: "school",
       year: 2025,
-      context: "HND · Human-Computer Interaction",
+      context: "HND · Human Computer Interface",
       summary:
         "A clickable prototype of a healthcare portal with role-specific dashboards for administrators, receptionists, claims examiners and healthcare providers, designed from wireframes and a small design system.",
       stack: ["HTML", "CSS", "JavaScript", "Wireframing"],
       repo: "HCI-OC3-Prototype",
     },
     {
-      title: "Inventory Management System",
+      title: "VStoq Inventory System",
       category: "school",
       year: 2024,
       context: "HNC · Software Development",
       summary:
-        "A console inventory and basket system in Java that stores items in files and logs activity through java.util.logging.",
+        "An inventory management system for small retailers, taken from proposal through analysis, design, testing and user documentation. Written in Java with file-based storage and java.util.logging.",
       stack: ["Java", "OOP", "File I/O", "Logging"],
       repo: "HNCSoftwareProject",
     },
     {
       title: "F24 Greenpower Electric Car",
       category: "school",
-      year: 2023,
+      year: 2016,
       badge: "🏅 Best Newcomer",
-      context: "North East Scotland College team",
+      context: "School team",
       summary:
-        "Part of the college team that built and raced an electric car in the Greenpower series. We won Best Newcomer at Alford and were invited to the international final at Rockingham Speedway in England.",
+        "Part of the school team that built and raced an electric car in the Greenpower series. We won Best Newcomer at Alford and were invited to the international final at Rockingham Speedway in England.",
       stack: ["Engineering", "Teamwork", "Electric vehicles"],
     },
     {
       title: "Rescue Drone Concept",
       category: "school",
-      year: 2023,
-      context: "CREST Gold Award",
+      year: 2017,
+      context: "CREST Gold Award (school)",
       summary:
         "A research project on emergency-response drones that could deliver first-aid kits and a defibrillator to an accident scene before an ambulance arrives.",
       stack: ["Research", "Design"],
@@ -219,8 +219,8 @@ window.PORTFOLIO = {
       title: "First Website",
       category: "school",
       year: 2023,
-      context: "SCQF 5/6 · Web Design assessment",
-      summary: "A multi-page website built to the specification of my web design assessment.",
+      context: "SCQF 6 · Authoring a Website",
+      summary: "My first assessed website: a multi-page site for a dairy farm and café, planned from a requirements proforma and built in HTML and CSS.",
       stack: ["HTML", "CSS"],
       repo: "webauthoring",
     },
@@ -236,7 +236,8 @@ window.PORTFOLIO = {
 
   experience: [
     { role: "Student IT HelpZone Shift Leader", org: "North East Scotland College", when: "2023 – 2025", text: "Led shifts, supervised colleagues and handled IT support for students: malware removal, Wi-Fi, accounts, drivers and accessibility setup." },
-    { role: "IT Summer Intern", org: "North East Scotland College ITTS", when: "Summer 2023", text: "Ticket-based support, IT asset tracking, network-wide OS deployment and wireless access point upgrades across campus." },
+    { role: "IT Work Placement", org: "LapSafe", when: "Feb – Mar 2025", text: "Locker maintenance and IT support tasks as part of the HND." },
+    { role: "IT Summer Intern", org: "North East Scotland College ITTS", when: "Summers 2023 & 2024", text: "Ticket-based support, IT asset tracking, network-wide OS deployment and wireless access point upgrades across campus." },
     { role: "Customer Advisor", org: "EE / BT", when: "2022", text: "" },
     { role: "Customer Service Ambassador", org: "OCS Group", when: "2019 – 2022", text: "" },
   ],
