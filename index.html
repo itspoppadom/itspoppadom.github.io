@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dominic Cameron · Portfolio</title>
+  <meta name="description" content="Dominic Cameron: computer science student in Aberdeen. School, hackathon and personal projects from college to university.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top">dom<span>.dev</span></a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Hi, I'm</p>
+      <h1>Dominic Cameron</h1>
+      <p class="lede">
+        Computer Science student at Robert Gordon University in Aberdeen. I came up through
+        college (SCQF 5/6, HNC, then HND in Software Development) and I like building things
+        that mix software with hardware: Raspberry Pis, Arduinos, sensors and self-hosted AI.
+      </p>
+      <div class="hero-stats" id="stats"></div>
+      <div class="hero-cta">
+        <a class="btn primary" href="#projects">See my work</a>
+        <a class="btn" href="https://github.com/itspoppadom" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <div class="filters" role="tablist" aria-label="Filter projects">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="hackathon">Hackathons</button>
+          <button class="chip" data-filter="school">School &amp; uni</button>
+          <button class="chip" data-filter="personal">Personal</button>
+        </div>
+      </div>
+      <div class="grid" id="project-grid"></div>
+    </section>
+
+    <section id="journey">
+      <h2>Journey</h2>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills" id="skill-list"></div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="exp" id="exp-list"></div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Get in touch</h2>
+      <p>Open to internships, placements and hackathon teams.</p>
+      <div class="hero-cta" id="contact-links"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Dominic Cameron · Built with plain HTML, CSS and JS on GitHub Pages</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
