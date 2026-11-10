@@ -98,18 +98,18 @@ window.PORTFOLIO = {
       private: true,
     },
     {
-      title: "Pi Zero LTE Tracker",
-      category: "personal",
+      title: "PATK Pet Tracker Collar",
+      category: "school",
       year: 2026,
-      context: "Embedded Linux",
+      featured: true,
+      badge: "Pitch graded A",
+      context: "BSc Year 3 · CM3141 Pirate Studies (team PATK)",
       summary:
-        "Cellular data and GPS-free positioning for a Raspberry Pi Zero 2 W. One script powers up a Clipper LTE modem over GPIO, configures it with AT commands and brings up a PPP link. A companion systemd service scans nearby Wi-Fi and uses the Google Geolocation API to keep an always-fresh location cache.",
-      stack: ["Python", "Raspberry Pi Zero 2 W", "AT commands", "pppd", "systemd", "Google Geolocation API"],
+        "A startup pitch for an LTE pet-tracking collar, aimed at selling through mobile networks such as EE. I built the hardware prototype on a Raspberry Pi Zero 2 W: a script powers up a Clipper LTE modem over GPIO, configures it with AT commands and brings up a PPP link, and a systemd service uses nearby Wi-Fi with the Google Geolocation API to keep an always-fresh location without GPS. The team also produced a landing page, brochure and Business Model Canvas.",
+      stack: ["Python", "Raspberry Pi Zero 2 W", "LTE / PPP", "AT commands", "systemd", "Google Geolocation API", "Business Model Canvas"],
       repo: "clipper-lte-ppp-setup",
       extraRepos: [{ repo: "wifi-locator", label: "Wi-Fi locator", private: true }],
     },
-
-    // ---------- School / university ----------
     {
       title: "Dog Walking Puzzle Solver",
       category: "school",
