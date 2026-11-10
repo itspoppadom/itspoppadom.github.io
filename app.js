@@ -27,7 +27,8 @@
 
   function repoLink(repo, label, isPrivate) {
     if (isPrivate) return `<span class="link muted" title="This repository is private">🔒 ${esc(label)}: on request</span>`;
-    return `<a class="link" href="${GH}${esc(repo)}" target="_blank" rel="noopener">${esc(label)} ↗</a>`;
+    const url = repo.includes("/") ? `https://github.com/${repo}` : `${GH}${repo}`;
+    return `<a class="link" href="${esc(url)}" target="_blank" rel="noopener">${esc(label)} ↗</a>`;
   }
 
   sorted.forEach((p) => {
