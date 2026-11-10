@@ -105,7 +105,7 @@ window.PORTFOLIO = {
       badge: "Pitch graded A",
       context: "BSc Year 3 · CM3141 Pirate Studies (team PATK)",
       summary:
-        "A startup pitch for an LTE pet-tracking collar, aimed at selling through mobile networks such as EE. The prototype runs on a Raspberry Pi Zero 2 W: a script powers up a Clipper LTE modem over GPIO, configures it with AT commands and brings up a PPP link, and a systemd service uses nearby Wi-Fi with the Google Geolocation API to keep an always-fresh location without GPS. The team also produced a landing page, brochure and Business Model Canvas.",
+        "A startup pitch for a modular smart pet collar with LTE tracking, sold at a low buy-in price and improved over time through technical updates. The prototype runs on a Raspberry Pi Zero 2 W: a script powers up a Clipper LTE modem over GPIO, configures it with AT commands and brings up a PPP link, and a systemd service uses nearby Wi-Fi with the Google Geolocation API to keep an always-fresh location without GPS. The team also produced a landing page, brochure and Business Model Canvas.",
       stack: ["Python", "Raspberry Pi Zero 2 W", "LTE / PPP", "AT commands", "systemd", "Google Geolocation API", "Business Model Canvas"],
       repo: "P-A-T-K/zoomie-locket",
       private: true,
@@ -274,7 +274,7 @@ window.PORTFOLIO = {
 
   links: {
     github: "https://github.com/itspoppadom",
-    linkedin: "https://www.linkedin.com/in/domatsoftware",
+    linkedin: "https://www.linkedin.com/in/domatsoftware/",
     blog: "https://dominiccameronhnd.wordpress.com/",
   },
 };
